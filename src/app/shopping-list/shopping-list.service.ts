@@ -20,4 +20,10 @@ export class ShoppingListService {
     // whenever the original array changes, we will send a copy of it
     this.ingredientsChanged.emit(this.ingredients.slice());
   }
+
+  addIngredients(ingredients: Ingredient[]) {
+    // adding all the new Ingredient objects to our existing array
+    this.ingredients.push(...ingredients);
+    this.ingredientsChanged.emit(this.ingredients.slice());
+  }
 }
