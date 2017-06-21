@@ -9,4 +9,4 @@ export class Ingredient {
 
   // shortcut //
   // constructor(public name: string, public amount: number){}
-}
+}// Object which will be used in detail-component
